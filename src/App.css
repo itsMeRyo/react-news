@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+.sp-font {
+  font-family: "Oleo Script", cursive;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.logo {
   color: white;
+  transition: linear 1s;
+  font-family: "Oleo Script", cursive;
+}
+.logo:hover {
+  color: salmon;
+}
+.navbar {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+.headline {
+  font-family: "Oleo Script", cursive;
+  color: black;
+  box-shadow: -1.6px 3px 10px e6e1e1ce;
+  border-radius: 0.5em;
+  margin-bottom: 3vh;
+}
+.headline:hover {
+  cursor: default;
+}
+.card {
+  border-radius: 1em;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+  box-shadow: -1.6px 3px 10px e6e1e1ce;
+  z-index: 1;
+}
+.card:hover {
+  transform: scale(1.01);
+}
+.card-img-top {
+  border-radius: 1em 1em 0.1em 0.1em;
+}
+.page-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-link {
+  color: white;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-link:hover {
+  color: salmon;
+  transform: scale(1.03);
+}
+.navbar-toggler {
+  background-color: white;
+}
+.btn-color {
+  background-color: black;
+  color: white;
 }
